@@ -1,0 +1,88 @@
+/* Make the website full screen */
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+/* Style the header */
+header {
+    text-align: center;
+}
+
+header h1 {
+    font-family:'Monaco';
+    font-size: 70px;
+    font-weight: bold;
+    color: #eeebeb;
+}
+
+/* Style the main content */
+main {
+    flex: 1;
+    display: flex;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: left;
+    padding: 50px 350px;
+    margin:10px 14px;
+}
+
+.twitter-image {
+    margin: 0.1px;
+}
+
+.twitter-image img {
+    width: 300px;
+    height:300px;
+    border-radius: 0.1px;
+} 
+
+.power-bi-link {
+    padding: 100px 150px;
+    text-align: right;
+    float: right;
+}
+button
+{
+   background-color: black;
+    border-color: white;
+    border-radius:5px;
+    border-width: 2px;
+    height:70px;
+    width:200px;
+}
+button:hover
+{
+    background-color: #e6e8ea;
+}
+.power-bi-link a {
+    font-family: 'Monaco';
+    font-size: 20px;
+    color: #dfe5eb;
+    text-decoration: none;    
+}
+.power-bi-link a:hover
+{
+    color: black;
+    text-decoration: none;
+}
+
+
+/* Make the website responsive */
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .twitter-image, .power-bi-link {
+        width: 100%;
+        margin: 10px;
+    }
+}
